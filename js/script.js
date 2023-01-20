@@ -11,17 +11,20 @@ formBtn.addEventListener("click", event => {
 });
 
 const rockButton = document.getElementById("rock-button");
-rockButton.addEventListener("click", () => {
+rockButton.addEventListener("click", event=> {
+  event.preventDefault();
   makeChoice("Sten");
 });
 
 const paperButton = document.getElementById("paper-button");
-paperButton.addEventListener("click", () => {
+paperButton.addEventListener("click", event => {
+  event.preventDefault();
   makeChoice("papper");
 });
 
 const scissorsButton = document.getElementById("scissors-button");
-scissorsButton.addEventListener("click", () => {
+scissorsButton.addEventListener("click", event => {
+  event.preventDefault();
   makeChoice("sax");
 });
 

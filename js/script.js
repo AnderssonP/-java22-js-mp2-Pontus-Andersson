@@ -90,8 +90,7 @@ function resetGame() {
   for(var i = 0; i < elementsToClear.length; i++) {
     document.getElementById(elementsToClear[i]).innerHTML = "";
   }
-  var buttons = ["rockButton", "paperButton", "scissorsButton"];
-  for(var i = 0; i < buttons.length; i++) {
-    document.getElementById(buttons[i]).removeAttribute("disabled");
-  }
+  rockButton.removeAttribute("disabled");
+  paperButton.removeAttribute("disabled");
+  scissorsButton.removeAttribute("disabled");
 }
